@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --text-color: #98b4b2;
+    --bg-color: #323234;
+    --white: #fff;
+    --black: #000;
+    --mob-color: #444444;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: var(--bg-color);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    z-index: 1;
+}
+
+nav .logo a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+nav .logo a span {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-size: 18px;
+    list-style: none;
+    z-index: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: var(--text-color);
+}
+
+.estructura {
+	background-color: var(--bg-color);
+	padding: 50px;
+
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 15px;
+
+}
+
+.card {
+	width: calc(25% - 15 px);
+	margin-bottom: 15px;
+	height: auto;
+	position: relative;
+	background: var(--bg-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	padding: 20px;
+	transition: all 0.5s ease-in;
+}
+
+.card > *{
+	padding: 10px;
+}
+
+.card .card-logo {
+	height: 150px;
+	width: 150px;
+	border: 5px double #98b4b2;
+	border-radius: 50%;
+	background-position: center center;
+	background-size: cover;
+
+}
+
+.card .card-title {
+	padding: 20px 10px;
+	font-size: 1rem;
+	color: var(--text-color);
+	text-align: center;
+}
+
+.card .card-place {
+	font-size: 0.9rem;
+	text-align: center;
+	color: #fff;
+}
+
+.card .card-date {
+	font-size: 0.9rem;
+	text-align: center;
+	color: var(--text-color);
+}
+
+.card:nth-child(1){
+	background: linear-gradient(#323234, #342E8F)
+}
+
+.card:nth-child(2){
+	background: linear-gradient(#323234, #342E8F)
+}
+
+.card:nth-child(3){
+	background: linear-gradient(#323234, #342E8F)
+}
+
+.card:nth-child(4){
+	background: linear-gradient(#323234, #342E8F)
+}
+
+.card:nth-child(5){
+	background: linear-gradient(#323234, #1CA324)
+}
+
+.card:nth-child(6){
+	background: linear-gradient(#323234, #342E8F)
+}
+
+.card:nth-child(7){
+	background: linear-gradient(#323234, #7C0D0D)
+}
+
+.card:nth-child(8){
+	background: linear-gradient(#323234, #5F1E99)
+}
+
+.card:nth-child(1) .card-logo {
+	background-image: url(COIITF.jpg);
+}
+
+.card:nth-child(2) .card-logo {
+	background-image: url(SCRUM.png);
+}
+
+.card:nth-child(3) .card-logo {
+	background-image: url(PMI.png);
+}
+
+.card:nth-child(4) .card-logo {
+	background-image: url(PMI.png);
+}
+
+.card:nth-child(5) .card-logo {
+	background-image: url(ECOEMBES.jpg);
+}
+
+.card:nth-child(6) .card-logo {
+	background-image: url(ESNECA.jpg);
+}
+
+.card:nth-child(7) .card-logo {
+	background-image: url(CELA.jpg);
+}
+
+.card:nth-child(8) .card-logo {
+	background-image: url(ULL.png);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(25% - 15px);
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card {
+        width: calc(50% - 15px);
+    }
+}
